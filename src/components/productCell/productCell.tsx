@@ -5,24 +5,24 @@ import { ProductCellProps } from "./productCell.interface";
 import style from "./productCell.module.css";
 
 export const ProductCell: React.FC<ProductCellProps> = ({
-  name,
+  title,
   image,
   description,
   category,
 }) => {
   return (
-    <article>
+    <article data-testid="product-cell">
       <div className={`relative overflow-hidden ${style["image-wrapper"]}`}>
         <Image
           src={image}
           fill
           className={style["image"]}
-          alt={name}
+          alt={title}
           sizes="(max-width: 768px) 50vw, 33vw"
         />
       </div>
       <div className="relative">
-        <h2 className="font-bold my-3.5 mr-7">{name}</h2>
+        <h2 className="font-bold my-3.5 mr-7">{title}</h2>
         <FavButton />
         <p>{description}</p>
 
