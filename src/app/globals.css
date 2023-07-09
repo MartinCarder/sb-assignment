@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply text-sm;
+  h2 {
+    @apply text-xs;
   }
   p {
-    @apply text-sm;
+    @apply text-xs;
   }
 }
