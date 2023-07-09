@@ -18,7 +18,7 @@ describe("ProductList", () => {
     expect(screen.getByTestId("product-list")).toHaveClass("grid-cols-2");
   });
 
-  it("Displays correct number of products in row for none desktop", async () => {
+  it("Displays correct number of products in row for none desktop", () => {
     render(<ProductList products={mockProducts} />);
 
     expect(screen.getByTestId("product-list")).toHaveClass("md:grid-cols-3");
