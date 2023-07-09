@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "test:css && jest --watch",
-    "test:ci": "test:css && jest --ci",
+    "test": "jest --watch",
+    "test:ci": "jest --ci",
     "test:css": "npx tailwindcss -i ./src/app/globals.css -o ./src/test/index.css"
   },
   "dependencies": {

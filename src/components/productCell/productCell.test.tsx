@@ -1,18 +1,15 @@
 import React from "react";
 import { ProductCell } from "./productCell";
-import Image from "next/image";
 import { render, screen } from "@testing-library/react";
-import { mockProduct } from "./__Mocks__/productCell";
+import { mockProduct } from "../__Mocks__/products";
 
 // eslint-disable-next-line react/display-name
 jest.mock("next/image", () => (props: any) => (
-  <img {...props} data-testid="image" />
+  // eslint-disable-next-line @next/next/no-img-element
+  <img src={props.src} alt={props.title} data-testid="image" />
 ));
 
 describe("ProductCell", () => {
-
-  
-
   it("Displays product details", () => {
     render(<ProductCell {...mockProduct} />);
 
