@@ -10,7 +10,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-Project requires Node 16 or greater to start the project first run
+Project requires Node 16.20.0 or greater to start the project first run
 
 ```bash
 npm install
