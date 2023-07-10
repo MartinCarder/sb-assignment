@@ -8,5 +8,6 @@
   }
   p {
     @apply text-xs;
+    overflow-wrap: break-word;
   }
 }

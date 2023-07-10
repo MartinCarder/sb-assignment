@@ -11,7 +11,7 @@ export const ProductCell: React.FC<ProductCellProps> = ({
   category,
 }) => {
   return (
-    <article data-testid="product-cell">
+    <article data-testid="product-cell" className="box-border overflow-hidden">
       <div className={`relative overflow-hidden ${style["image-wrapper"]}`}>
         <Image
           src={image}

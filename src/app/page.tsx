@@ -5,7 +5,7 @@ export default async function Home() {
   const products = await getProducts();
 
   return (
-    <main className="max-w-7xl mx-auto">
+    <main className="max-w-7xl md:mx-auto">
       <ProductList products={products} />
     </main>
   );
